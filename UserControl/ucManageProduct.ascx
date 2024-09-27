@@ -9,7 +9,7 @@
         <td class="auto-style1">Product name:</td>
         <td class="auto-style1">
             <asp:TextBox ID="TextBoxName" runat="server"></asp:TextBox>
-            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Tên khóa chưa được nhập" ControlToValidate="TextBoxName"></asp:RegularExpressionValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBoxName" ErrorMessage="Tên khóa chưa được nhập"></asp:RequiredFieldValidator>
         </td>
         <td class="auto-style1"></td>
     </tr>
@@ -18,7 +18,7 @@
         <td>Price:</td>
         <td>
             <asp:TextBox ID="TextBoxPrice" runat="server"></asp:TextBox>
-            <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ErrorMessage="Thời lượng khóa chưa được nhập" ControlToValidate="TextBoxPrice"></asp:RegularExpressionValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBoxPrice" ErrorMessage="Thời lượng khóa chưa được nhập"></asp:RequiredFieldValidator>
         </td>
         <td>&nbsp;</td>
     </tr>
@@ -35,7 +35,7 @@
         <td>Description:</td>
         <td>
             <asp:TextBox ID="TextBoxDescription" runat="server" TextMode="MultiLine"></asp:TextBox>
-            <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ErrorMessage="Mô tả khóa học chưa được nhập" ControlToValidate="TextBoxDescription"></asp:RegularExpressionValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBoxDescription" ErrorMessage="Mô tả khóa học chưa được nhập"></asp:RequiredFieldValidator>
         </td>
         <td>&nbsp;</td>
     </tr>
@@ -44,7 +44,7 @@
         <td>Picture:</td>
         <td>
             <asp:FileUpload ID="FileUploadPicture" runat="server" />
-            <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ErrorMessage="Hình ảnh chưa được nhập" ControlToValidate="FileUploadPicture"></asp:RegularExpressionValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="FileUploadPicture" ErrorMessage="Hình ảnh chưa được nhập"></asp:RequiredFieldValidator>
         </td>
         <td>&nbsp;</td>
     </tr>
@@ -52,7 +52,7 @@
     <tr>
         <td>&nbsp;</td>
         <td>
-            <%--<asp:Button ID="ButtonAddNew" runat="server" Text="Add new" OnClick="ButtonAddNew_Click" />--%>
+            <asp:Button ID="ButtonAddNew" runat="server" Text="Add new" OnClick="ButtonAddNew_Click" />-
         </td>
 
     </tr>
