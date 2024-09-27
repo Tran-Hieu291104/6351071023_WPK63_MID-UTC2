@@ -3,13 +3,16 @@
     .auto-style1 {
         height: 34px;
     }
+    .auto-style2 {
+        height: 53px;
+    }
 </style>
 <table style="width: 100%">
     <tr>
         <td class="auto-style1">Product name:</td>
         <td class="auto-style1">
             <asp:TextBox ID="TextBoxName" runat="server"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBoxName" ErrorMessage="Tên khóa chưa được nhập"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBoxName" ErrorMessage="Tên khóa chưa được nhập" BorderColor="Red" ForeColor="Red"></asp:RequiredFieldValidator>
         </td>
         <td class="auto-style1"></td>
     </tr>
@@ -18,7 +21,7 @@
         <td>Price:</td>
         <td>
             <asp:TextBox ID="TextBoxPrice" runat="server"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBoxPrice" ErrorMessage="Thời lượng khóa chưa được nhập"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBoxPrice" ErrorMessage="Thời lượng khóa chưa được nhập" ForeColor="Red"></asp:RequiredFieldValidator>
         </td>
         <td>&nbsp;</td>
     </tr>
@@ -32,19 +35,19 @@
     </tr>
 
     <tr>
-        <td>Description:</td>
-        <td>
+        <td class="auto-style2">Description:</td>
+        <td class="auto-style2">
             <asp:TextBox ID="TextBoxDescription" runat="server" TextMode="MultiLine"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBoxDescription" ErrorMessage="Mô tả khóa học chưa được nhập"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBoxDescription" ErrorMessage="Mô tả khóa học chưa được nhập" ForeColor="Red"></asp:RequiredFieldValidator>
         </td>
-        <td>&nbsp;</td>
+        <td class="auto-style2"></td>
     </tr>
 
     <tr>
         <td>Picture:</td>
         <td>
             <asp:FileUpload ID="FileUploadPicture" runat="server" />
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="FileUploadPicture" ErrorMessage="Hình ảnh chưa được nhập"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="FileUploadPicture" ErrorMessage="Hình ảnh chưa được nhập" ForeColor="Red"></asp:RequiredFieldValidator>
         </td>
         <td>&nbsp;</td>
     </tr>
